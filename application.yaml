@@ -2,14 +2,14 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: pyroscope-application
-  namespace: pyroscope-argocd
+  namespace: argocd
 spec:
   project: default
 
   source:
     repoURL: https://github.com/MohithN02/pyroscope.git
     targetRevision: HEAD
-    path: dev
+    path: chart/pyroscope
   destination: 
     server: https://kubernetes.default.svc
     namespace: pyroscope-argocd
