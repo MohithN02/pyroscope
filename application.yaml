@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/MohithN02/pyroscope.git
     targetRevision: HEAD
-    path: chart/pyroscope
+    path: chart/pyroscope-ebpf
   destination: 
     server: https://kubernetes.default.svc
     namespace: pyroscope-argocd
